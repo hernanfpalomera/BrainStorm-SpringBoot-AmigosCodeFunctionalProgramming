@@ -15,6 +15,7 @@ public class Main {
                 -> "default value");
         System.out.println(value2);
 
+
         Supplier<IllegalStateException> exception = ()  -> new IllegalStateException("Exception");
 
         Object value3 = Optional.ofNullable(null).orElseThrow(exception);
